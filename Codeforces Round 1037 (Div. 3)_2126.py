@@ -32,36 +32,36 @@
 
 #     print(m)
 
+# I will definitely make it
+# t = int(input())
+# for _ in range(t):
+#     n, k = map(int, input().split())
+#     arry = list(map(int, input().split()))
+#     ip = arry[k-1] 
+#     arry.sort() 
+#     f = arry.index(ip)  
+#     h_max = max(arry)
+#     m = 1
 
-t = int(input())
-for _ in range(t):
-    n, k = map(int, input().split())
-    arry = list(map(int, input().split()))
-    ip = arry[k-1] 
-    arry.sort() 
-    f = arry.index(ip)  
-    h_max = max(arry)
-    m = 1
+#     if ip == h_max:
+#         print("YES")
+#         continue
 
-    if ip == h_max:
-        print("YES")
-        continue
+#     success = False
 
-    success = False
+#     while ip >= m :
+#         for i in range(n-f):
+#             if arry[f+1] - arry[f] <= (ip-m+1):
+#                 m += 1
+#                 ip += (arry[f+1] - arry[f])
+#                 break
+#         else:
+#             break
+#         if ip == h_max:
+#             success = True
+#             break
 
-    while ip >= m :
-        for i in range(n-f):
-            if arry[f+1] - arry[f] <= (ip-m+1):
-                m += 1
-                ip += (arry[f+1] - arry[f])
-                break
-        else:
-            break
-        if ip == h_max:
-            success = True
-            break
-
-    if success:
-        print("YES")   
-    else:
-        print("NO")
+#     if success:
+#         print("YES")   
+#     else:
+#         print("NO")
